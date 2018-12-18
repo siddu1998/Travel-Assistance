@@ -12,3 +12,7 @@ Understanding the Ground truth format
 use the draw.py to understand the cordinates better image_name,(x, y),(x+w, y+h),class_name
 
 
+### Step 3
+Filtering images consisting of classes [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 15, 16 , 33, 34, 35, 36, 37, 38, 39, 40] using excel.
+
+
