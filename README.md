@@ -1,22 +1,4 @@
-# Travel-Assistance
-Traffic sign detection on PPM images using CNN
+# Georgia Tech Internship Submission
 
-### Step 1
-a. Download the training dataset
+An absolutely amazing journey in wrapping up the assignment, all instructions to set-up the project are mentioned in the wiki https://github.com/siddu1998/Travel-Assistance/wiki
 
-b. Since the ppm images are not the best to visualize convert the .ppm images into .jpeg
-
-c. Since we need to detect Red Round objects remove images which do not belong to the classes [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 15, 16]
-
-### Step 2
-Understanding the Ground truth format
-"00009.ppm,925;466;949;490;4" 
-use the draw.py to understand the cordinates better image_name,(x, y),(x+w, y+h),class_name
-
-
-### Step 3
-Filtering images consisting of classes [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 15, 16] using excel.
-
- these image numbers in the training data contain the red round circles
-
-[3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 18, 19, 23, 26, 27, 29, 53, 54, 56, 57, 60, 61, 63, 64, 65, 67, 69, 71, 72, 73, 75, 76, 77, 80, 85, 88, 89, 93, 94, 95, 101, 107, 109, 110, 111, 112, 113, 114, 120, 121, 122, 123, 124, 125, 126, 127, 129, 130, 131, 134, 135, 138, 141, 142, 144, 146, 149, 150, 151, 156, 157, 165, 166, 167, 169, 170, 171, 172, 173, 174, 175, 176, 178, 180, 181, 182, 184, 185, 186, 187, 192, 203, 204, 216, 217, 220, 222, 223, 224, 225, 226, 228, 229, 230, 231, 234, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 252, 253, 254, 259, 260, 263, 264, 265, 268, 269, 270, 271, 274, 277, 280, 281, 283, 284, 287, 288, 290, 291, 292, 293, 296, 298, 300, 301, 303, 309, 311, 312, 314, 316, 318, 319, 322, 323, 330, 334, 338, 339, 343, 346, 348, 349, 350, 351, 353, 355, 357, 358, 359, 360, 363, 366, 367, 368, 369, 370, 371, 372, 373, 377, 378, 379, 380, 382, 384, 385, 386, 390, 392, 396, 397, 398, 401, 403, 404, 405, 412, 413, 414, 415, 416, 418, 419, 420, 425, 427, 428, 431, 432, 434, 435, 436, 439, 441, 443, 444, 445, 446, 448, 456, 457, 459, 460, 463, 466, 467, 468, 470, 473, 474, 475, 476, 477, 478, 479, 480, 483, 484, 485, 486, 487, 488, 490, 491, 494, 496, 497, 498, 501, 502, 503, 504, 507, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 523, 524, 527, 528, 530, 531, 536, 544, 545, 548, 551, 552, 556, 560, 566, 570, 575, 593, 599]
