@@ -4,5 +4,4 @@ An absolutely amazing journey in wrapping up the assignment, all instructions to
 
 
 ### Run and android [easier to evaluate]
-Simpler and easier way to run the model 
-https://drive.google.com/file/d/18jwEmvFp4UshHjaDVS2s96V0ifgz1wZt/view
+Simpler and easier way to run the model [apk in the repositary]
