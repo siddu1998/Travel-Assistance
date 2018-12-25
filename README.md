@@ -4,4 +4,4 @@ An absolutely amazing journey in wrapping up the assignment, all instructions to
 
 
 ### Run and android [easier to evaluate]
-Simpler and easier way to run the model [apk in the repositary]
+Simpler and easier way to run the model [apk in the repositary] red_round.apk
