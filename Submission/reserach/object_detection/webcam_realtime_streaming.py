@@ -6,6 +6,8 @@ import tarfile
 import tensorflow as tf
 import zipfile
 import cv2
+import time
+
 
 from collections import defaultdict
 from io import StringIO
@@ -54,7 +56,7 @@ def load_image_into_numpy_array(image):
 with detection_graph.as_default():
     with tf.Session(graph=detection_graph) as sess:
         while True:
-
+            start_time = time.time()
             # Read frame from camera
             ret, image_np = cap.read()
             # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
@@ -83,7 +85,7 @@ with detection_graph.as_default():
                 category_index,
                 use_normalized_coordinates=True,
                 line_thickness=8)
-
+            print("FPS: ", 1.0 / (time.time() - start_time))
             # Display output
             cv2.imshow('object detection', cv2.resize(image_np, (800, 600)))
 
